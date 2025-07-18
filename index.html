@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 02 - Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: hsl(0, 0%, 0%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: hsl(0, 0%, 100%);
+        }
+
+        .container {
+            text-align: center;
+            padding: 2rem;
+            background: hsl(30, 10%, 15%);
+            border-radius: 20px;
+            border: 1px solid hsl(30, 10%, 25%);
+            box-shadow: 0 8px 32px hsla(0, 0%, 0%, 0.5);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: hsl(0, 0%, 100%);
+            text-shadow: 0 2px 4px hsla(0, 0%, 0%, 0.3);
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .nav-button {
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px hsla(0, 0%, 0%, 0.5);
+        }
+
+        .todo-btn {
+            background: hsl(0, 70%, 60%);
+            color: hsl(0, 0%, 100%);
+        }
+
+        .stopwatch-btn {
+            background: hsl(180, 60%, 50%);
+            color: hsl(0, 0%, 100%);
+        }
+
+        .fortune-btn {
+            background: hsl(200, 70%, 60%);
+            color: hsl(0, 0%, 100%);
+        }
+
+        .nav-button:active {
+            transform: translateY(-1px);
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .nav-button {
+                padding: 0.8rem 1.5rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Assignment 02</h1>
+        <div class="button-container">
+            <a href="todolist/todo.html" class="nav-button todo-btn">📝 ToDo List</a>
+            <a href="stopwatch.html" class="nav-button stopwatch-btn">⏱️ Stopwatch</a>
+            <a href="fortune_cookies/fortune.html" class="nav-button fortune-btn">🍪 Fortune Cookies</a>
+        </div>
+    </div>
+</body>
+</html>
