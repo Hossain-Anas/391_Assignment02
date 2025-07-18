@@ -1,4 +1,4 @@
-// Array of fortune messages (at least 10 different fortunes)
+// Array of fortune messages 
 const fortunes = [
     "True wisdom comes not from knowledge, but from understanding.",
     "A journey of a thousand miles begins with a single step.",
