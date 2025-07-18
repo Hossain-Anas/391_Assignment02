@@ -1,0 +1,113 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 10%);
+}
+
+.stopwatch {
+    display: flex;
+    flex-direction: column;   /* Stack vertically */
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* full viewport height */
+    gap: 50px;     /* space between timer and buttons */
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; /* space between buttons */
+}
+
+.pause-button {
+    background: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.15);
+}
+
+.pause-button:hover {
+    background: hsl(0, 0%, 30%);
+    transform: scale(1.08);
+}
+
+.pause-button svg {
+    width: 32px;
+    height: 32px;
+    fill: hsl(0, 0%, 90%);
+    transition: fill 0.2s;
+}
+
+
+
+.play-button {
+    background: hsl(13, 73%, 49%);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.15);
+}
+
+.play-button:hover {
+    background: hsl(13, 73%, 25%);
+    transform: scale(1.08);
+}
+
+.play-button svg {
+    width: 32px;
+    height: 32px;
+    fill: hsl(0, 0%, 90%);
+    transition: fill 0.2s;
+}
+
+.reset-button {
+    background: hsl(283, 73%, 49%);
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, 0.15);
+}
+
+.reset-button:hover {
+    background: hsl(283, 73%, 25%);
+    transform: scale(1.08);
+}
+
+.reset-button svg {
+    width: 32px;
+    height: 32px;
+    fill: hsl(0, 0%, 90%);
+    transition: fill 0.2s;
+}
+
+
+
+
+
