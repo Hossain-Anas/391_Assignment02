@@ -91,8 +91,3 @@ function getTodo(){
     
     return parsedTodos;
 }
-
-getTodo();
-
-
-saveTodo();
